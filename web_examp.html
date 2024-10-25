@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        /* Base */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Layout */
+        .layout-header {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .layout-main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .layout-footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Module */
+        .module-post {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .module-post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .module-post-content {
+            font-size: 16px;
+        }
+
+        /* State */
+        .module-post.is-featured {
+            border-color: #FFD700;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header class="layout-header">
+        <h1>My Simple Blog</h1>
+    </header>
+    <main class="layout-main">
+        <article class="module-post is-featured">
+            <h2 class="module-post-title">First Blog Post</h2>
+            <p class="module-post-content">This is a short summary of the featured post.</p>
+        </article>
+        <article class="module-post">
+            <h2 class="module-post-title">Second Blog Post</h2>
+            <p class="module-post-content">Here is some content for another blog post.</p>
+        </article>
+    </main>
+    <footer class="layout-footer">
+        <p>© 2024 Simple Blog</p>
+    </footer>
+</body>
+</html>
